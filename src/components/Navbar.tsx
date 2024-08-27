@@ -1,23 +1,17 @@
-
+import SideIcon from "../assets/icon/SideIcon.png";
+import HomeIcon from "../assets/icon/HomeIcon.png";
 function Navbar() {
   return (
     <div>
-      <div className="flex flex-row items-center gap-10 ml-10 mt-9 border-2">
-        <h1 className="font-bold text-[40px] border-2">PassionCafe</h1>
-        <ul className="flex flex-row gap-10 text-[20px] font-semibold">
-          <li>
-            <a href="Home">Home</a>
-          </li>
-          <li>
-            <a href="Search">Search</a>
-          </li>
-          <li>
-            <a href="Profile">Profile</a>
-          </li>
-          <li>
-            <a href="Setting">Setting</a>
-          </li>
-        </ul>
+      <div className="navbar bg-base-100 px-72">
+        <div className="flex-1">
+          <img src={SideIcon} alt="" className="w-[80px]" />
+        </div>
+  
+          <div className="dropdown dropdown-end">
+            <img src={HomeIcon} alt="" className="w-[30px]" />
+          </div>
+     
       </div>
     </div>
   );
