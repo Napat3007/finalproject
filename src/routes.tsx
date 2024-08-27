@@ -1,17 +1,16 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
-import App from "./App";
-import Home from "./views/home";
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Navbar";
+import {  createBrowserRouter, Navigate } from "react-router-dom";
 
+import Home from "./views/Home";
+
+import { MainLayout } from "./components/Auth/MainLayout";
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Sidebar />,
-        // children: [
-        //     { path: "/", element: <Navigate to="home" /> },
-        //     // { path: "home", element: <HomeBanner/> },
-        // ],
+        element: <MainLayout />,
+        children: [
+            { path: "/", element: <Navigate to="home" /> },
+            { path: "home", element: <Home/> },
+        ],
     },
 ]);

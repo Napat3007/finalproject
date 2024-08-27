@@ -7,45 +7,35 @@ import LogoutIcon from '../assets/icon/LogoutIcon.png'
 
 function Sidebar() {
   return (
-    <div className="w-[450px] h-[1080px] px-2 border-2 bg-gray-900">
+    <div className="w-[300px] h-[1080px] px-2 bg-gray-900">
       <div>
         <ul>
-          <div className="flex flex-col">
-            <br />
-            <img src={SideIcon} alt=''/>
-            <br/>
-            <p className="font-bold text-5xl text-center text-gray-300">PASSIONCOFFEE</p>
-            <p className="font-bold text-xl text-center text-gray-300">APPLICATION</p>
-            <br />
-            <br />
-            <li className="text-2xl font-bold text-center text-gray-300">
-              <div className='flex flex-row justify-start items-center gap-10 ml-28'><img src={HomeIcon} alt='' />
+          <div className="flex flex-col items-center px-8">
+            <img src={SideIcon} alt='' className='mb-4'/>
+            <p className="font-bold text-2xl text-center text-gray-300 ">PASSIONCOFFEE</p>
+            <p className="font-bold text-2xl text-center text-gray-300  mb-4">APPLICATION</p>
+            <li className="text-xl font-bold text-start text-gray-300">
+              <div className='flex  justify-start items-center gap-4 mb-4'><img src={HomeIcon} alt='' className='w-[30px]' />
               <a href="Home">Home</a></div>
             </li>
-            <br />
-            <li className="text-2xl font-bold text-center text-gray-300">
-              <div className='flex flex-row justify-start items-center gap-10 ml-28'><img src={SearchIcon} />
+            <li className="text-xl font-bold text-start text-gray-300">
+              <div className='flex justify-start items-center gap-4 mb-4'><img src={SearchIcon} className='w-[30px]'/>
               <a href="Search">Search</a>
               </div>
             </li>
-            <br />
-            <li className="text-2xl font-bold text-center text-gray-300">
-              <div className='flex flex-row justify-start items-center gap-10 ml-28'><img src={ProfileIcon}/>
+            <li className="text-xl font-bold text-start text-gray-300">
+              <div className='flex justify-start items-center gap-4 mb-4'><img src={ProfileIcon} className='w-[30px]'/>
               <a href="Profile">Profile</a></div>
             </li>
-            <br />
             <div className="h-[260px]"/>
-            <li className="text-2xl font-bold text-center text-gray-300">
-              <div className='flex flex-row justify-start items-center gap-10 ml-28'><img src={SettingIcon}/>
+            <li className="text-xl font-bold text-start text-gray-300">
+              <div className='flex justify-start items-center gap-4 mb-4'><img src={SettingIcon} className='w-[30px]'/>
                 <a href="Setting">Setting</a></div>
-              
             </li>
-            <br />
-            <li className="text-2xl font-bold text-center text-gray-300">
-              <div className='flex flex-row justify-start items-center gap-10 ml-28'><img src={LogoutIcon} />
+            <li className="text-xl font-bold text-start text-gray-300">
+              <div className='flex justify-start items-center gap-4 mb-4'><img src={LogoutIcon} className='w-[30px]'/>
               <a href="">Logout</a></div>
             </li>
-            <br />
           </div>
         </ul>
       </div>
