@@ -1,6 +1,5 @@
-import Header from "../Header";
+import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar";
-import Sidebar from "../Sidebar";
 
 export const MainLayout = () => {
   return (
@@ -10,7 +9,7 @@ export const MainLayout = () => {
           <Navbar />
         </div>
         <div className="w-full px-72"> 
-          <Header />
+        <Outlet/>
         </div>
       </div>
     </div>
